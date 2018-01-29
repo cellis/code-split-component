@@ -17,7 +17,7 @@ coverage
 
 # Build output
 umd
-commonjs
+# commonjs
 example/build/
 
 # Flow-Types
