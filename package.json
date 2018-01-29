@@ -72,19 +72,19 @@
     "jest": "18.1.0",
     "jest-cli": "18.1.0",
     "memory-fs": "0.4.1",
-    "react": "15.4.2",
-    "react-addons-test-utils": "15.4.2",
-    "react-dom": "15.4.2",
     "rimraf": "^2.5.4",
     "webpack": "2.2.0-rc.1"
   },
   "peerDependencies": {
     "babel-core": "^6.21.0",
-    "react": "^0.14.0 || ^15.0.0",
     "webpack": "^1.0.0 || ^2.2.0-rc.1"
   },
   "dependencies": {
     "invariant": "^2.2.1",
-    "md5": "^2.2.1"
+    "md5": "^2.2.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.2.0"
   }
 }
