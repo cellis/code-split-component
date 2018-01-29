@@ -8,6 +8,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _react = require('react');
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -86,16 +92,16 @@ var CodeSplitProvider = function (_Component) {
 }(_react.Component);
 
 CodeSplitProvider.propTypes = {
-  children: _react.PropTypes.element.isRequired,
-  context: _react.PropTypes.object, // eslint-disable-line
-  state: _react.PropTypes.arrayOf(_react.PropTypes.shape({
-    id: _react.PropTypes.string.isRequired,
-    module: _react.PropTypes.func.isRequired
+  children: _propTypes2.default.element.isRequired,
+  context: _propTypes2.default.object, // eslint-disable-line
+  state: _propTypes2.default.arrayOf(_propTypes2.default.shape({
+    id: _propTypes2.default.string.isRequired,
+    module: _propTypes2.default.func.isRequired
   }))
 };
 CodeSplitProvider.childContextTypes = {
-  registerChunkLoaded: _react.PropTypes.func.isRequired,
-  registerModule: _react.PropTypes.func.isRequired,
-  retrieveModule: _react.PropTypes.func.isRequired
+  registerChunkLoaded: _propTypes2.default.func.isRequired,
+  registerModule: _propTypes2.default.func.isRequired,
+  retrieveModule: _propTypes2.default.func.isRequired
 };
 exports.default = CodeSplitProvider;
